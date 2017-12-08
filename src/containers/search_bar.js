@@ -30,6 +30,7 @@ class SearchBar extends Component {
           value={this.state.term}
           onChange={this.onInputChange}
         />
+
         <span className="input-group-btn">
           <button type="submit" className="btn btn-secondary">
             Submit
@@ -39,7 +40,6 @@ class SearchBar extends Component {
     )
   }
 }
-
 
 function mapDispatchToProps(dispatch){
   return bindActionCreators({fetchWeather: fetchWeather}, dispatch);
